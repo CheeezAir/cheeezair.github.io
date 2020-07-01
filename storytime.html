@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+<html>
+<script>
+
+</script>
+<style>
+    html{
+        height: 100%;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background: #1e1e24;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+    
+    #title{
+        display: block;
+        font-family: 'Charm';
+        font-size: 85px;
+        text-align: center;
+        color: #adadaf;
+
+        
+    }
+    .btn-flip {
+        opacity: 1;
+        outline: 0;
+        color: #fff;
+        line-height: 425px;
+        position: relative;
+        letter-spacing: 1px;
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+        margin: auto;
+        text-align: justify;
+        width: 33.1%;
+    }
+    .btn-flip:hover:after {
+        opacity: 1;
+        -webkit-transform: translateY(0) rotateX(0);
+        transform: translateY(0) rotateX(0);
+    }
+    .btn-flip:hover:before {
+        opacity: 0;
+        -webkit-transform: translateY(50%) rotateX(90deg);
+        transform: translateY(50%) rotateX(90deg);
+    }
+    .btn-flip:after {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        color: #323237;
+        display: inline-block;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        position: absolute;
+        background: #adadaf;
+        font-family: 'Charm';
+        
+        font-size: 25px;
+        text-align: start;
+        line-height: 45px;
+        text-align: center;
+        text-indent: 10px;
+        content: attr(data-back);
+        -webkit-transform: translateY(-50%) rotateX(90deg);
+        transform: translateY(-50%) rotateX(90deg);
+
+
+    }
+    .btn-flip:before {
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color: #adadaf;
+        display: block;
+        padding: 0 30px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        position: relative;
+        background: #323237;
+        content: attr(data-front);
+        font-size: 70px;
+        -webkit-transform: translateY(0) rotateX(0);
+        transform: translateY(0) rotateX(0);
+        text-align: center;
+
+    }
+</style>
+<body>
+<h1 id = "title">Storytime!</h1>
+
+<a href="#" id = "Private" class="btn-flip" 
+data-back="You gotta know the password to see these stories and don't expect me to give it.
+They are filled with drama and are depressing. 
+These are all true from my life.
+Beware before reading" data-front="Private"></a>
+
+
+<a href="#" id = "Public" class="btn-flip" 
+data-back="Here are some stories from my life!
+Read to your hearts content!
+They range from sad to funny, old times to present, ballet to mathematics, I got a boatload!" 
+data-front="Public"></a>
+
+
+<a href="#" id = "Fiction" class="btn-flip" 
+data-back="These are stories I have written or from my dreams (or nightmares)!" 
+data-front="Fiction"></a>
+
+
+</body>
+</html>
