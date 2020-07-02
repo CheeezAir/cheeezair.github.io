@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+<html>
+<script>
+
+</script>
+<style>
+    html{
+        height: 100%;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background: #1e1e24;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        line-height: 25px;
+
+    }
+    
+    #title{
+        display: block;
+        font-family: 'Charm';
+        font-size: 85px;
+        text-align: center;
+        color: #adadaf;
+
+        
+    }
+    #tagsTitle{
+        display: block;
+        font-family: 'Charm';
+        font-size: 40px;
+        text-align: center;
+        color: #adadaf;
+    }
+    .tags{
+        display: flex;
+        justify-content: space-around;
+    }
+    .tags .button {
+        background-color: #4CAF50; /* Green */
+        border: 1px solid green;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        cursor: pointer;
+        width: 150px;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .tags .button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+    }
+
+    .tags .button:hover {
+        background-color: #3e8e41;
+    }
+
+    .opt{
+        display: flex;
+        justify-content: center;
+    }
+
+    a{
+        width: 50%;
+        height: 75px;
+        line-height: 20px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: white;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        text-overflow: ellipsis;
+    }
+
+    a span{
+        position: relative;
+        z-index: 2;
+    }
+
+    a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: green;
+        transition: all .35s;
+    }
+
+    a:hover{
+        color: rgb(174, 106, 236);
+    }
+
+    a:hover:after{
+        width: 100%;
+    }
+    
+</style>
+<body>
+<h1 id = "title">Public!</h1>
+<h2 id = "tagsTitle">Tags: </h2>
+<div class = "tags">
+    <button class = "button">Funny</button>
+    <button class = "button">Depressing</button>
+    <button class = "button">Dramatic</button>
+    <button class = "button">Old Times</button>
+    <button class = "button">Present</button>
+</div>
+<div class = "opt">
+    <a href="#" onclick="location.href='PublicStory1.html'"><span>Pretending to be gay <br> <br>Funny</span></a>
+    <a href="#" data = "hoi"><span>Hover Me!</span></a>
+    
+</div>
+<div class = "opt">
+    <a href="#"><span>Pretending to be gay <br> hi</span></a>
+    <a href="#" data = "hoi"><span>Hover Me!</span></a>
+    
+</div>
+
+</body>
+</html>

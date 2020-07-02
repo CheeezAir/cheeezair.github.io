@@ -103,14 +103,16 @@
 data-back="You gotta know the password to see these stories and don't expect me to give it.
 They are filled with drama and are depressing. 
 These are all true from my life.
-Beware before reading" data-front="Private"></a>
+Beware before reading" data-front="Private"
+onclick="document.getElementById('Private').setAttribute('data-back', 'Password?')"></a>
 
 
 <a href="#" id = "Public" class="btn-flip" 
 data-back="Here are some stories from my life!
 Read to your hearts content!
 They range from sad to funny, old times to present, ballet to mathematics, I got a boatload!" 
-data-front="Public"></a>
+data-front="Public"
+onclick="location.href='public.html'"></a>
 
 
 <a href="#" id = "Fiction" class="btn-flip" 
