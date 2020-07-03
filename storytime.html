@@ -1,8 +1,7 @@
 <!DOCTYPE html>
+<html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
-<html>
-<script type="text/javascript" src="storytimeJS.js"></script>
 <style>
     html{
         height: 100%;
@@ -95,16 +94,41 @@
         text-align: center;
 
     }
+    input[type="text"] {
+        width: 200px;
+        height: 20px;
+        padding-right: 60px;
+        display: none;
+    }
+
+    input[type="submit"] {
+        margin-left: -60px;
+        height: 25px;
+        width: 55px;
+        background-color: gray;
+        display: none;
+    }
 </style>
+</head>
 <body>
+
+<input type="text" name="fname" id = "inputText">
+<input type="submit" value="Submit" id = "submission">
+
+
+
 <h1 id = "title">Storytime!</h1>
+
 
 <a href="#" id = "Private" class="btn-flip" 
 data-back="You gotta know the password to see these stories and don't expect me to give it.
 They are filled with drama and are depressing. 
 These are all true from my life.
 Beware before reading" data-front="Private"
-onclick="document.getElementById('Private').setAttribute('data-back', 'Password?')"></a>
+onclick="document.getElementById('Private').setAttribute('data-back', 
+'Password? Top left for submission');
+document.getElementsByTagName('input')[0].style.display = 'inline-block';
+document.getElementsByTagName('input')[1].style.display = 'inline-block';"></a>
 
 
 <a href="#" id = "Public" class="btn-flip" 
@@ -119,6 +143,7 @@ onclick="location.href='public.html'"></a>
 data-back="These are stories I have written or from my dreams (or nightmares)!" 
 data-front="Fiction"></a>
 
+<script src = "storytimeJS.js"></script>
 
 </body>
 </html>
