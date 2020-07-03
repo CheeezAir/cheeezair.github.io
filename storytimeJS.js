@@ -12,7 +12,7 @@ async function checkHash(){
     const digestHex = await digestMessage(text);
     console.log(digestHex);
 
-    if(digestHex === "0983ea1ecee4c628edca1b44c3c719ddd1eec3c0babd11a65eadd43ba336b730"){
+    if(digestHex === "3110f24227f1d5dd707b96876985e826909daaabf58da0083d197e408af76a39"){
         document.location.href = "private.html";
 
     } else{
