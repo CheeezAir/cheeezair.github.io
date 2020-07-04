@@ -11,7 +11,6 @@ async function digestMessage(message) {
 async function checkHash(){
     const digestHex = await digestMessage(text);
     console.log(digestHex);
-
     if(digestHex === "3110f24227f1d5dd707b96876985e826909daaabf58da0083d197e408af76a39"){
         document.location.href = "private.html";
 
