@@ -4,7 +4,7 @@ function check(){
     var path = window.location.pathname;
     var page = path.split("/").pop();
     text = document.getElementById('inputText').value;
-    if(text.toLowerCase() === "phoebe wong" && page === "StartScreen.html"){
+    if(text.toLowerCase() === "phoebe wong" && page === "index.html"){
         document.location.href = "1.html";
     } 
     else if(text === "pH" && page === "1.html"){
